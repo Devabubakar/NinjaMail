@@ -1,0 +1,24 @@
+.spinner { 
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.spinner::after{
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px transparent solid;
+    border-top-color:#4BA87D;
+    border-bottom-color:rgba(0, 0, 0, .5);
+    animation:loading .5s linear infinite;
+}
+
+@keyframes loading {
+    to{
+        transform: rotate(1turn);
+    }
+    
+}
